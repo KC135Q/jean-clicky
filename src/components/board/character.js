@@ -13,7 +13,7 @@ export default class Character extends Component {
             duration={500}>
             <div className="character">
                 <img 
-                    src={window.location.origin + this.props.character.img} 
+                    src={`${window.location.origin}${this.props.character.img}`} 
                     alt="character" 
                     className="profile-pic"
                     onClick={this.handleClick}/>
